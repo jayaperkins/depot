@@ -13,4 +13,8 @@ class Product < ActiveRecord::Base
       message: "must end with .gif, .jpg, or .png"
   }
 
+  def self.latest
+    Product.order(:updated_at).last
+  end
+
 end
