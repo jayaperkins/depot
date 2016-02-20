@@ -51,6 +51,36 @@
       width: 13em;
       background: #333333;
 
+      .recent {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        background-color: #730E15;
+        text-align: center;
+      }
+
+      .recent-title {
+        font-size: 15px;
+        font-family: sans-serif;
+        margin: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .recent-img img {
+        width: 75px;
+        height: 75px;
+        margin: 0 20px;
+      }
+
+      .recent-description {
+        font-size: 15px;
+        font-family: sans-serif;
+        margin: 10px;
+        color: white;
+        text-align: center;
+      }
+
       ul {
           padding: 0;
 

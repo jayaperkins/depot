@@ -12,6 +12,7 @@
     color: saddlebrown;
     border-bottom: 3px solid chocolate;
   }
+
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
@@ -25,6 +26,7 @@
       margin-bottom: 5px;
       position: absolute;
     }
+
     h3 {
       font-size: 120%;
       font-family: sans-serif;
@@ -33,6 +35,7 @@
       margin-bottom: 2px;
       color: saddlebrown;
     }
+
     p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em;

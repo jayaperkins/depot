@@ -13,8 +13,20 @@
   </div>
   <div id="columns">
     <div id="side">
-      <div>
-        <% Product.latest %>
+      <div class="recent">
+        <h4 class="recent-title">Recent Product</h4>
+        <div class="recent-title">
+          <%= Product.last.title %>
+        </div>
+        <div class="recent-img">
+          <%= image_tag(Product.last.image_url) %>
+        </div>
+        <div class="recent-description">
+          <%= truncate(Product.last.description, length: 15) %>
+        </div>
+        <div class="recent-description">
+          <%= number_to_currency(Product.last.price) %>
+        </div>
       </div>
       <ul>
         <li><a href="/index">Home</a></li>
