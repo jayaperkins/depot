@@ -9,23 +9,23 @@
 <body class='<%= controller.controller_name %>'>
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || "Jeremy's Bookstore" %>
   </div>
   <div id="columns">
     <div id="side">
       <div class="recent">
         <h4 class="recent-title">Recent Product</h4>
         <div class="recent-title">
-          <%= Product.last.title %>
+          <%= Product.latest.title %>
         </div>
         <div class="recent-img">
-          <%= image_tag(Product.last.image_url) %>
+          <%= image_tag(Product.latest.image_url) %>
         </div>
         <div class="recent-description">
-          <%= truncate(Product.last.description, length: 15) %>
+          <%= truncate(Product.latest.description, length: 15) %>
         </div>
         <div class="recent-description">
-          <%= number_to_currency(Product.last.price) %>
+          <%= number_to_currency(Product.latest.price) %>
         </div>
       </div>
       <ul>
