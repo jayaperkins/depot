@@ -64,7 +64,7 @@ class CartsController < ApplicationController
     @cart.destroy if @cart.id == session[:cart_id]  #limit cart destruction. can only delete cart if it is a cookie in your browser
     session[:cart_id] = nil
     respond_to do |format|
-      format.html { redirect_to store_url, notice: 'Your awesome cart is empty!' }
+      format.html { redirect_to store_url }
       format.json { head :no_content }
     end
   end

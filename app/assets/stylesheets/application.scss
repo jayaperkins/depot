@@ -47,9 +47,22 @@
 
     #side {
       float: left;
-      padding: 1em 2em;
+      padding: .5em;
       width: 13em;
       background: #333333;
+
+      #cart {
+        width: 200px;
+        height: auto;
+        font-size: smaller;
+        background-color: #763;
+        color: white;
+        table {
+          border-top: 5px solid #078;
+          border-bottom: 3px solid #078;
+          margin-bottom: 10px;
+        }
+      }
 
       .recent {
         width: auto;
