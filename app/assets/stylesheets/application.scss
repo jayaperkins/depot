@@ -14,12 +14,18 @@
  *= require_self
  */
 
+html, body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 #banner {
     background: #999999;
     padding-top: 10px;
     border-bottom: 2px solid;
     font: small-caps 60px/70px "Arial Black", sans-serif;
-    color: saddlebrown;
+    color: #730E15;
     text-align: center;
 
     img {
@@ -52,8 +58,10 @@
       background: #333333;
 
       #cart {
-        width: 200px;
+        width: 210px;
         height: auto;
+        padding: 10px;
+        box-sizing: border-box;
         font-size: smaller;
         background-color: #763;
         color: white;
@@ -106,4 +114,36 @@
         }
       }
     }
+}
+
+
+.depot_form {
+  fieldset {
+    background: #efe;
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
+    }
+  }
 }
