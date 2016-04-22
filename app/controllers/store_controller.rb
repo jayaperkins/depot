@@ -8,6 +8,12 @@ class StoreController < ApplicationController
   def index
     @products = Product.order(:title)
 
+    if params[:set_locale]
+      redirect_to store_url(locale: params[:set_locale])
+    else
+      @products
+    end
+
     if session[:counter].nil?
       @counter = 1
     else
